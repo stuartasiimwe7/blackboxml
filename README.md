@@ -19,10 +19,10 @@ blackboxml/
 ├── logs/                 #where the logs will be stored
 ├── __init__.py
 ├── autopilot.py
-├── example_usage.py      # sample for using of this package
+├── example_usage.py      #sample for using of this package
 ├── .gitignore            
 ├── LICENSE
-├── README.md
+├── README.md             #this file
 └── setup.py
 ```
 
