@@ -8,5 +8,12 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),
+     install_requires=[
+        'tensorflow>=2.0.0',
+        'scikit-learn',
+        'matplotlib',
+        'numpy',
+        'pandas',
+    ],
     
 )
