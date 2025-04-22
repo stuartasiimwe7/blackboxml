@@ -6,7 +6,7 @@
 We’ve all been there:
 - You train a model in Colab or Jupyter
 - It takes 10+ hours
-- You forget to log the `training_loss` over `validation_loss` in the process
+- You forget to log the `training_loss` or `validation_loss` in the process
 - Now you want to plot training and validation loss over epochs
 
 **BlackBoxML** has got your back!
@@ -16,15 +16,16 @@ Just import and forget it.
 
 ```
 blackboxml/
+├── logs/                 #where the logs will be stored
 ├── __init__.py
 ├── autopilot.py
-├── visualizer.py         # (optional, for visualizations)
-├── utils.py              # (optional, for helper functions)
-├── logs/                 # where logs will be stored
-└── README.md
-setup.py
-LICENSE
+├── example_usage.py      # sample for using of this package
+├── .gitignore            
+├── LICENSE
+├── README.md
+└── setup.py
 ```
+
 ## Installation
 
 To get started with **BlackBoxML**, follow these steps to set up your environment and install the package:
