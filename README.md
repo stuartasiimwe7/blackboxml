@@ -24,3 +24,8 @@ blackboxml/
 setup.py
 LICENSE
 ```
+## Installation
+
+
+```bash
+pip install blackboxml
