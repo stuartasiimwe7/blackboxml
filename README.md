@@ -10,6 +10,7 @@ We’ve all been there:
 - Now you want to plot training and validation loss over epochs
 
 **BlackBoxML** has got your back!
+Just import and forget it.
 
 ## Project Structure
 
@@ -63,7 +64,8 @@ You're all set! 🎉
 ```python
 import blackboxml  # Auto-patches keras.Model.fit()
 
-# Then use your normal training code:
+#Then use your normal training code:
+#See the 'example_usage.py' file for detailed usage example
 model.fit(...)
 ```
 
@@ -75,11 +77,12 @@ It will automatically log:
 
 ## Output
 
-Example file structure:
+After training your model, **BlackBoxML** will automatically generate a log file containing all the recorded metrics. Here's an example of the output directory structure:
 
 ```
 blackbox_logs/
-└── metrics_20250420_134513.json
+└── metrics_YYYYMMDD_HHMMSS.json
 ```
 
-🎯 No changes to your training loop. Just import and forget it.
+Each log file is timestamped for easy identification and contains metrics such as training loss, validation loss, accuracy, and any other metrics tracked during training.
+```
