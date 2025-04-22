@@ -26,6 +26,60 @@ LICENSE
 ```
 ## Installation
 
+To get started with **BlackBoxML**, follow these steps to set up your environment and install the package:
+
+### Step 1: Create a Virtual Environment
+
+It is recommended to use a virtual environment to manage dependencies.
+
+```bash
+python -m venv venv
+```
+
+### Step 2: Activate the Virtual Environment
+
+#### On Windows:
+```bash
+venv\Scripts\activate
+```
+
+#### On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+### Step 3: Install BlackBoxML
+
+Once the virtual environment is activated, install the package using pip:
 
 ```bash
 pip install blackboxml
+```
+
+You're all set! 🎉
+
+## Usage
+
+```python
+import blackboxml  # Auto-patches keras.Model.fit()
+
+# Then use your normal training code:
+model.fit(...)
+```
+
+It will automatically log:
+
+- Training & validation loss
+- Accuracy
+- All metrics in `.json` format in `./blackbox_logs/`
+
+## Output
+
+Example file structure:
+
+```
+blackbox_logs/
+└── metrics_20250420_134513.json
+```
+
+🎯 No changes to your training loop. Just import and forget it.
