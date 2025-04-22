@@ -15,5 +15,14 @@ setup(
         'numpy',
         'pandas',
     ],
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'Natural Language :: English',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ]
     
 )
