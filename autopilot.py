@@ -5,7 +5,7 @@ import datetime
 
 def autopilot():
     try:
-        import tensorflow.keras.models as models
+        import tensorflow.keras.models as models #fix this issue
         original_fit = models.Model.fit
 
         def patched_fit(self, *args, **kwargs):
@@ -30,5 +30,5 @@ def autopilot():
     except Exception as e:
         print(f"[BlackBoxML] Autopilot failed:Error: {e}")
         print("[BlackBoxML]  Auto-logging disabled.")
-        
+
         return
