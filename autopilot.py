@@ -5,7 +5,7 @@ import datetime
 
 def autopilot():
     try:
-        import tensorflow.keras.models as models #fix this issue
+        import tensorflow.keras.models as models # type: ignore #fix this issue
         original_fit = models.Model.fit
 
         def patched_fit(self, *args, **kwargs):
