@@ -1,7 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 
-def visualize_metrics(filepath):
+def visualise_metrics(filepath):
     with open(filepath, 'r') as f:
         metrics = json.load(f)
 
