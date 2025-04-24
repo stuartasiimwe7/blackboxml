@@ -1,0 +1,1 @@
+{"experiment": "mnist_cnn", "tags": ["keras", "mnist", "cnn"], "timestamp": "20250424_220713", "final_logs": {"accuracy": 0.9808499813079834, "loss": 0.06254034489393234, "val_accuracy": 0.9818999767303467, "val_loss": 0.057152990251779556}}
