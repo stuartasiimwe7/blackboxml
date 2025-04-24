@@ -29,3 +29,8 @@ model.fit(x_train, y_train, epochs=2, batch_size=64, validation_split=0.1)
     You should see a .json file saved in blackbox_logs/ 
     with training & validation metrics — automatically.
 '''
+
+from blackboxml.visualizer import visualize_metrics
+
+# After training, just run:
+visualize_metrics("blackbox_logs/metrics_20250420_134513.json")
