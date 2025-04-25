@@ -79,6 +79,9 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+#logs
+blackbox_logs/
+
 # IPython
 profile_default/
 ipython_config.py
