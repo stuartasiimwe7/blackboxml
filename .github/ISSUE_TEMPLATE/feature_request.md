@@ -1,4 +1,4 @@
-# ✨ Feature Request
+# Feature Request
 
 ## Is your feature request related to a problem? Please describe
 Clearly and concisely describe the problem you are facing.  
