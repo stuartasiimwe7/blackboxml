@@ -1,43 +1,39 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: bug, invalid
-assignees: ''
+# 🐞 Bug Report
 
----
+## Describe the Bug
+A clear and concise description of what the bug is.
 
-### **Bug Report**  
-#### **Describe the Bug**  
-Provide a clear and concise description of the issue.  
+## Steps to Reproduce
+Please outline the exact steps needed to reproduce the behavior:
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
 
-#### **Steps to Reproduce**  
-List the exact steps to reproduce the problem:  
-1. Navigate to [...]  
-2. Click on [...]  
-3. Scroll to [...]  
-4. Observe the error  
+## Expected Behavior
+Explain what you expected to happen instead of the current behavior.
 
-#### **Expected Behavior**  
-Describe what you expected to happen instead.  
+## Screenshots (Optional)
+If applicable, add screenshots to help explain your problem.
 
-#### **Screenshots**  
-If applicable, attach screenshots to illustrate the issue.  
+## Environment
+**Desktop or Server:**
+- OS: [e.g., Windows, macOS, Ubuntu]
+- Browser (if applicable): [e.g., Chrome, Firefox]
+- Browser Version: [e.g., 122.0]
 
-#### **System Information**  
-**Desktop:**  
-- Operating System: [e.g., Windows, macOS]  
-- Browser: [e.g., Chrome, Firefox]  
-- Version: [e.g., 22]  
+**Mobile (if applicable):**
+- Device: [e.g., iPhone 14, Galaxy S23]
+- OS: [e.g., iOS 17, Android 13]
+- Browser: [e.g., Safari, Chrome]
+- Browser Version: [e.g., 22]
 
-**Mobile:**  
-- Device: [e.g., iPhone, Samsung]  
-- Operating System: [e.g., iOS, Android]  
-- Browser: [e.g., Safari, Chrome]  
-- Version: [e.g., 22]  
+**Software Version:**
+- Python version: [e.g., 3.11.4]
+- blackboxml version: [e.g., 0.1.0]
 
-#### **Additional Context**  
-Provide any other relevant details that might help diagnose the issue.  
+## Additional Context
+Any other context about the problem that might be helpful.
 
-#### **Possible Fixes (Optional)**  
-If you have ideas on how this might be resolved, suggest them here.
+## Possible Solution (Optional)
+Suggest a fix or reasons why you think the bug is happening.
