@@ -142,6 +142,8 @@ Each log file is timestamped for easy identification and contains metrics such a
 
 We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated.
 
+To report a bug, please use our [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
+
 ### How to Contribute
 
 1. **Fork the Repository**: Click the "Fork" button at the top of this repository.
