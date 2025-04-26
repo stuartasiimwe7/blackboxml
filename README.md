@@ -144,7 +144,7 @@ We welcome contributions of all kinds! Whether it's reporting a bug, suggesting 
 
 Please see our [Contributing Guidelines](./CONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
 
-To report a bug, please use our [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
+To report a bug, please use our [Bug Report Template](/.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
 
 To suggest a new feature or enhancement, please use our [Feature Request Template](./.github/ISSUE_TEMPLATE/feature_request.md). Your ideas and feedback are invaluable in improving **BlackBoxML**.
 
