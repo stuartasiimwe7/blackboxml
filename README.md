@@ -65,7 +65,7 @@ pip install blackboxml
 
 And now you aree all set! 
 
-## 🧩 How It Works
+## How It Works
 
 BlackBoxML integrates seamlessly into your workflow by patching `model.fit()` to log metrics automatically. Here's how you can use it:
 
