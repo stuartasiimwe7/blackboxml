@@ -13,7 +13,7 @@ Link any related issues:
 - Closes #123
 - Fixes #456
 
-## 🛠 Changes
+## Changes
 List major changes:
 - Added [...]
 - Updated [...]

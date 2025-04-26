@@ -138,7 +138,7 @@ Each log file is timestamped for easy identification and contains metrics such a
 - **Increase Reproducibility**: Metrics stored automatically for experiment comparisons.
 - **Focus on Research, Not Bookkeeping**: Let BlackBoxML handle the boring stuff.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated. 
 
@@ -148,7 +148,11 @@ To report a bug, please use our [Bug Report Template](./.github/ISSUE_TEMPLATE/b
 
 To suggest a new feature or enhancement, please use our [Feature Request Template](./.github/ISSUE_TEMPLATE/feature_request.md). Your ideas and feedback are invaluable in improving **BlackBoxML**.
 
-## 📜 License
+We take security seriously and strive to ensure that **BlackBoxML** is safe to use. If you discover any security vulnerabilities or have concerns, please report them to us immediately by creating an issue or contacting us directly. For more details, refer to our [Security Policy](./SECURITY.md).
+
+We are committed to fostering an open and welcoming environment for everyone. By participating in this project, you agree to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please read it to understand the standards we expect from our community members.
+
+## License
 
 This project is licensed under the Apache License 2.0. You are free to use, modify, and distribute this software, provided that you comply with the terms of the license. For more details, see the [LICENSE](./LICENSE) file.
 
