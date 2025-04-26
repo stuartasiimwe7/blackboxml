@@ -99,7 +99,7 @@ with autopilot("mnist_cnn", tags=["keras", "cnn", "mnist"]) as tracker:
 
 This approach allows you to organize and tag your experiments for better tracking and analysis.
 
-### 📊 Visualizing Metrics
+### Visualizing Metrics
 
 After training, you can visualize the logged metrics using the `visualiser` module:
 
@@ -142,7 +142,7 @@ Each log file is timestamped for easy identification and contains metrics such a
 
 We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated. 
 
-Please see our [Contributing Guidelines](/.githubCONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
+Please see our [Contributing Guidelines](/.github/CONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
 
 To report a bug, please use our [Bug Report Template](/.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
 
