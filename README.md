@@ -140,56 +140,13 @@ Each log file is timestamped for easy identification and contains metrics such a
 
 ## 🤝 Contributing
 
-We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated.
+We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated. 
+
+Please see our [Contributing Guidelines](./CONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
+
 To report a bug, please use our [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
 
 To suggest a new feature or enhancement, please use our [Feature Request Template](./.github/ISSUE_TEMPLATE/feature_request.md). Your ideas and feedback are invaluable in improving **BlackBoxML**.
-
-### How to Contribute
-
-1. **Fork the Repository**: Click the "Fork" button at the top of this repository.
-2. **Clone Your Fork**: 
-
-You can clone the repository using one of the following methods:
-
-- **HTTPS**:
-    ```bash
-    git clone https://github.com/stuartasiimwe7/blackboxml.git
-    ```
-- **GitHub CLI**:
-    ```bash
-    gh repo clone stuartasiimwe7/blackboxml
-    ```
-- **SSH**:
-    ```bash
-    git clone git@github.com:stuartasiimwe7/blackboxml.git
-    ```
-3. **Create a Branch**: 
-    ```bash
-    git checkout -b feature-or-bugfix-name
-    ```
-4. **Make Your Changes**: Improve the code, fix bugs, or enhance documentation.
-5. **Test Your Changes**: Ensure your changes work as expected.
-6. **Commit and Push**:
-    ```bash
-    git add .
-    git commit -m "Description of your changes"
-    git push origin feature-or-bugfix-name
-    ```
-7. **Submit a Pull Request**: Open a pull request to the `main` branch of this repository.
-
-### Guidelines
-
-- Follow the [PEP 8](https://peps.python.org/pep-0008/) style guide for Python code.
-- Write clear and concise commit messages.
-- Ensure your changes do not break existing functionality.
-- Add or update tests if applicable.
-
-### Need Help?
-
-If you have any questions or need assistance, feel free to open an issue or reach out to the maintainers.
-
-Thank you for contributing to **BlackBoxML**! Together, we can make this project even better. 🚀
 
 ## 📜 License
 
