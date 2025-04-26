@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='blackboxml',
-    version='0.1.0',
+    version='0.1.1',
     author='Stuart Asiimwe',
     author_email='stuartgabriel@ymail.com',
     description='An Auto-metric logger library for Machine Learning workflows, even when you forget.',
