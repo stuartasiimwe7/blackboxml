@@ -142,15 +142,15 @@ Each log file is timestamped for easy identification and contains metrics such a
 
 We welcome contributions of all kinds! Whether it's reporting a bug, suggesting a feature, improving documentation, or submitting a pull request, your help is greatly appreciated. 
 
-Please see our [Contributing Guidelines](/.github/CONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
+Please see our [Contributing Guidelines](./.github/CONTRIBUTING.md) for more information on how to get started. Together, we can make **BlackBoxML** even better!
 
-To report a bug, please use our [Bug Report Template](/.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
+To report a bug, please use our [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.md). This will help us address issues more efficiently.
 
 To suggest a new feature or enhancement, please use our [Feature Request Template](./.github/ISSUE_TEMPLATE/feature_request.md). Your ideas and feedback are invaluable in improving **BlackBoxML**.
 
-We take security seriously and strive to ensure that **BlackBoxML** is safe to use. If you discover any security vulnerabilities or have concerns, please report them to us immediately by creating an issue or contacting us directly. For more details, refer to our [Security Policy](/.github/SECURITY.md).
+We take security seriously and strive to ensure that **BlackBoxML** is safe to use. If you discover any security vulnerabilities or have concerns, please report them to us immediately by creating an issue or contacting us directly. For more details, refer to our [Security Policy](./.github/SECURITY.md).
 
-We are committed to fostering an open and welcoming environment for everyone. By participating in this project, you agree to abide by our [Code of Conduct](/.github/CODE_OF_CONDUCT.md). Please read it to understand the standards we expect from our community members.
+We are committed to fostering an open and welcoming environment for everyone. By participating in this project, you agree to abide by our [Code of Conduct](./.github/CODE_OF_CONDUCT.md). Please read it to understand the standards we expect from our community members.
 
 ## License
 
