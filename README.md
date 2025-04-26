@@ -7,7 +7,8 @@ We’ve all been there:
 - You train a model in Colab or Jupyter
 - It takes 10+ hours
 - You forget to log the `training_loss` or `validation_loss` in the process
-- Now you want to plot training and validation loss over epochs
+- Now you want to plot training and validation loss over epochs, 
+- BUT can't because you forgot to log & plot them during training!
 
 **BlackBoxML** has got your back!
 Whether you're building CNNs, Transformers, or experimental models, BlackBoxML ensures you never lose your training history again.
