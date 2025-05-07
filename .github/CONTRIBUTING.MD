@@ -15,7 +15,7 @@ Your efforts help push BlackBoxML forward.
 
   - **HTTPS**:
     ```bash
-    git clone https://github.com/your-username/blackboxml.git
+    git clone https://github.com/stuartasiimwe7/blackboxml.git
     ```
 
   - **GitHub CLI**:
@@ -25,7 +25,7 @@ Your efforts help push BlackBoxML forward.
 
   - **SSH**:
     ```bash
-    git clone git@github.com:your-username/blackboxml.git
+    git clone git@github.com:stuartasiimwe7/blackboxml.git
     ```
 
 - Navigate into the project directory:
