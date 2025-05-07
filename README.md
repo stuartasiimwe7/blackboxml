@@ -12,9 +12,8 @@ We’ve all been there:
 Whether you're building CNNs, Transformers, or experimental models, BlackBoxML ensures you never lose your training history again.
 
 No setup overhead.
-No excuses.
 Just pure productivity.
-Just import and forget it.
+Import and forget it.
 
 ## Project Structure
 
