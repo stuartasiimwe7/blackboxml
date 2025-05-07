@@ -1,6 +1,6 @@
-# Contributor Covenant Code of Conduct
+# Contributor Covenant Code of Conduct 📜
 
-## 📜 Our Pledge
+## Our Pledge
 
 We as members, contributors of **BlackBoxML** pledge to make participation in our project and community a harassment-free experience for everyone — regardless of age, body size, disability, ethnicity, gender identity and expression, experience level, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
