@@ -73,7 +73,7 @@ Your efforts help push BlackBoxML forward.
 
 - Open a pull request (PR) against the `main` branch.
 - Provide a clear description of your changes and link any relevant issues.
-- Make sure all automated checks pass before submitting. Please follow the pull guidelines here
+- Make sure all automated checks pass before submitting. Please follow the [Pull Request Template](../.github/PULL_REQUEST_TEMPLATE.MD).
 
 ### 8. Participate in Code Review
 
