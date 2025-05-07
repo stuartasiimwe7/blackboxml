@@ -20,7 +20,7 @@ Your efforts help push BlackBoxML forward.
 
   - **GitHub CLI**:
     ```bash
-    gh repo clone your-username/blackboxml
+    gh repo clone stuartasiimwe7/blackboxml
     ```
 
   - **SSH**:
@@ -93,7 +93,7 @@ Your efforts help push BlackBoxML forward.
 
 - Check existing issues first.
 - Provide clear reproduction steps.
-- Use the [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md).
+- Use the [Bug Report Template](./.github/ISSUE_TEMPLATE/bug_report.md).
 
 ### Adding New Features
 
