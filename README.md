@@ -1,4 +1,4 @@
-# traceml (formerly blackboxml)
+# traceML (formerly blackboxml)
 
 A Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to your code workflow, even if you forgot to set it up.
 

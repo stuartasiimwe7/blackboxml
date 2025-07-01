@@ -9,7 +9,7 @@ def autopilot():
         original_fit = models.Model.fit
 
         def patched_fit(self, *args, **kwargs):
-            print("[BlackBoxML] Auto-logging metrics from model.fit()")
+            print("[Traceml] Auto-logging metrics from model.fit()")
 
             history = original_fit(self, *args, **kwargs)
             metrics = history.history
@@ -21,15 +21,15 @@ def autopilot():
             with open(filename, "w") as f:
                 json.dump(metrics, f)
 
-            print(f"[BlackBoxML] Metrics logged to {filename}")
+            print(f"[Traceml] Metrics logged to {filename}")
             return history
 
         models.Model.fit = patched_fit
-        print("[BlackBoxML] Patched model.fit() to log metrics.")
+        print("[Traceml] Patched model.fit() to log metrics.")
 
     except Exception as e:
-        print(f"[BlackBoxML] Autopilot failed. Error: {e}")
-        print("[BlackBoxML] Auto-logging disabled.")
+        print(f"[Traceml] Autopilot failed. Error: {e}")
+        print("[Traceml] Auto-logging disabled.")
 
 
 class Tracker(AbstractContextManager):
@@ -40,13 +40,13 @@ class Tracker(AbstractContextManager):
         self.filename = None
 
     def __enter__(self):
-        print(f"[BlackBoxML] Starting experiment: {self.experiment_name}")
+        print(f"[Traceml] Starting experiment: {self.experiment_name}")
         return self
 
     def get_keras_callback(self):
         from tensorflow.keras.callbacks import Callback  # type: ignore
 
-        class BlackBoxMLCallback(Callback):
+        class TracemlCallback(Callback):
             def on_train_end(inner_self, logs=None):
                 logs = logs or {}
                 log_data = {
@@ -60,11 +60,11 @@ class Tracker(AbstractContextManager):
                 self.filename = f"blackbox_logs/metrics_{self.start_time.strftime('%Y%m%d_%H%M%S')}.json"
                 with open(self.filename, "w") as f:
                     json.dump(log_data, f)
-                print(f"[BlackBoxML] Final logs saved to {self.filename}")
+                print(f"[Traceml] Final logs saved to {self.filename}")
 
-        return BlackBoxMLCallback()
+        return TracemlCallback()
 
     def __exit__(self, exc_type, exc_value, traceback):
-        print(f"[BlackBoxML] Finished experiment: {self.experiment_name}")
+        print(f"[Traceml] Finished experiment: {self.experiment_name}")
         if exc_type:
-            print(f"[BlackBoxML] Error during experiment: {exc_value}")
+            print(f"[Traceml] Error during experiment: {exc_value}")

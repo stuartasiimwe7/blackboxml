@@ -1,10 +1,10 @@
-from blackboxml import autopilot, Tracker  # Updated import
+from traceml import autopilot, Tracker  # Updated import
 import tensorflow as tf
 from tensorflow.keras.models import Sequential  # type: ignore
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D  # type: ignore
 from tensorflow.keras.datasets import mnist  # type: ignore
 from tensorflow.keras.utils import to_categorical  # type: ignore
-from blackboxml.visualiser import visualise_metrics  # Updated import
+from traceml.visualiser import visualise_metrics  # Updated import
 
 # Patch model.fit() (optional if autopilot() is auto-run in __init__.py)
 autopilot()
