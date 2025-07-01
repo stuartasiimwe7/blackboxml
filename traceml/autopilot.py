@@ -4,11 +4,18 @@ import datetime
 from contextlib import AbstractContextManager
 
 def autopilot():
+    """
+    Automatically patches tf.keras.Model.fit() to log training metrics to a JSON file in traceml_logs/.
+    After calling this function, every Keras model.fit() call will save metrics automatically.
+    """
     try:
         import tensorflow.keras.models as models  # type: ignore
         original_fit = models.Model.fit
 
         def patched_fit(self, *args, **kwargs):
+            """
+            Replacement for Model.fit(). Logs metrics to traceml_logs/ after training.
+            """
             print("[traceML] Auto-logging metrics from model.fit()")
 
             history = original_fit(self, *args, **kwargs)
@@ -33,7 +40,16 @@ def autopilot():
 
 
 class Tracker(AbstractContextManager):
+    """
+    Context manager for experiment tracking and logging in traceML.
+    Provides a Keras callback to log experiment metadata and final logs to traceml_logs/.
+    """
     def __init__(self, experiment_name, tags=None):
+        """
+        Args:
+            experiment_name (str): Name of the experiment.
+            tags (list, optional): List of tags for the experiment.
+        """
         self.experiment_name = experiment_name
         self.tags = tags or []
         self.start_time = datetime.datetime.now()
@@ -44,6 +60,11 @@ class Tracker(AbstractContextManager):
         return self
 
     def get_keras_callback(self):
+        """
+        Returns a Keras Callback that logs experiment metadata and final logs to traceml_logs/.
+        Returns:
+            keras.callbacks.Callback: The traceML callback for logging.
+        """
         from tensorflow.keras.callbacks import Callback  # type: ignore
 
         class TraceMLCallback(Callback):
