@@ -1,31 +1,4 @@
-# ⚠️ DEPRECATION NOTICE
-
-**This package has been renamed to `traceml` and will no longer be maintained under the old name.**
-
-## Migration Instructions
-
-1. **Uninstall the old package:**
-   ```bash
-   pip uninstall blackboxml
-   ```
-
-2. **Install the new package:**
-   ```bash
-   pip install traceml
-   ```
-
-3. **Update your imports:**
-   ```python
-   # Old
-   from blackboxml import autopilot, Tracker
-   from blackboxml.visualiser import visualise_metrics
-   
-   # New
-   from traceml import autopilot, Tracker
-   from traceml.visualiser import visualise_metrics
-   ```
-
----
+# traceml (formerly blackboxml)
 
 A Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to your code workflow, even if you forgot to set it up.
 
