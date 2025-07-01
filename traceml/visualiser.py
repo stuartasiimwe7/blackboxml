@@ -1,14 +1,23 @@
 import json
 import matplotlib.pyplot as plt
+import os
 
-def visualise_metrics(filepath):
+def visualise_metrics(filepath, save_path=None, show=True):
+    """
+    Visualise training/validation metrics from a JSON file.
+    If save_path is provided, saves each plot as an image file in that directory.
+    If show is True, displays the plots interactively.
+    """
     with open(filepath, 'r') as f:
         metrics = json.load(f)
 
     epochs = range(1, len(next(iter(metrics.values()))) + 1)
 
+    if save_path:
+        os.makedirs(save_path, exist_ok=True)
+
     for key in metrics:
-        if 'val_' in key:  #plot validation metrics separately
+        if 'val_' in key:  # plot validation metrics separately
             continue
         plt.figure()
         plt.plot(epochs, metrics[key], label=key)
@@ -20,4 +29,10 @@ def visualise_metrics(filepath):
         plt.title(f"{key} vs Epochs")
         plt.legend()
         plt.grid(True)
-        plt.show()
+        if save_path:
+            filename = os.path.join(save_path, f"{key}_vs_epochs.png")
+            plt.savefig(filename)
+        if show:
+            plt.show()
+        else:
+            plt.close()

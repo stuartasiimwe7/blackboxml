@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='traceml',
+    name='traceML',
     version='0.1.1',
     author='Stuart Asiimwe',
     author_email='stuartgabriel@ymail.com',
     description="Automatically logs Keras training metrics.",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/stuartasiimwe7/blackboxml',
+    url='https://github.com/stuartasiimwe7/traceml',
     packages=find_packages(),
      install_requires=[
         'tensorflow>=2.0.0',
