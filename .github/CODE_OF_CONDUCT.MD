@@ -2,7 +2,7 @@
 
 ## Our Pledge
 
-We as members, contributors of **BlackBoxML** pledge to make participation in our project and community a harassment-free experience for everyone — regardless of age, body size, disability, ethnicity, gender identity and expression, experience level, nationality, personal appearance, race, religion, or sexual identity and orientation.
+We as members, contributors of **traceML** pledge to make participation in our project and community a harassment-free experience for everyone — regardless of age, body size, disability, ethnicity, gender identity and expression, experience level, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 We commit to fostering an open, welcoming, and diverse environment.
 
@@ -34,7 +34,7 @@ This Code of Conduct applies within all project spaces — including GitHub repo
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the maintainers at:
-> 📧 **report@blackboxml.com**
+> 📧 **report@traceml.com**
 
 All complaints will be reviewed and investigated promptly and fairly.
 
