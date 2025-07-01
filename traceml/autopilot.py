@@ -9,27 +9,27 @@ def autopilot():
         original_fit = models.Model.fit
 
         def patched_fit(self, *args, **kwargs):
-            print("[Traceml] Auto-logging metrics from model.fit()")
+            print("[traceML] Auto-logging metrics from model.fit()")
 
             history = original_fit(self, *args, **kwargs)
             metrics = history.history
 
-            os.makedirs("blackbox_logs", exist_ok=True)
+            os.makedirs("traceml_logs", exist_ok=True)
             timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"blackbox_logs/metrics_{timestamp}.json"
+            filename = f"traceml_logs/metrics_{timestamp}.json"
 
             with open(filename, "w") as f:
                 json.dump(metrics, f)
 
-            print(f"[Traceml] Metrics logged to {filename}")
+            print(f"[traceML] Metrics logged to {filename}")
             return history
 
         models.Model.fit = patched_fit
-        print("[Traceml] Patched model.fit() to log metrics.")
+        print("[traceML] Patched model.fit() to log metrics.")
 
     except Exception as e:
-        print(f"[Traceml] Autopilot failed. Error: {e}")
-        print("[Traceml] Auto-logging disabled.")
+        print(f"[traceML] Autopilot failed. Error: {e}")
+        print("[traceML] Auto-logging disabled.")
 
 
 class Tracker(AbstractContextManager):
@@ -37,16 +37,16 @@ class Tracker(AbstractContextManager):
         self.experiment_name = experiment_name
         self.tags = tags or []
         self.start_time = datetime.datetime.now()
-        self.filename = None
+        self.filename = ""  # Always a string
 
     def __enter__(self):
-        print(f"[Traceml] Starting experiment: {self.experiment_name}")
+        print(f"[traceML] Starting experiment: {self.experiment_name}")
         return self
 
     def get_keras_callback(self):
         from tensorflow.keras.callbacks import Callback  # type: ignore
 
-        class TracemlCallback(Callback):
+        class TraceMLCallback(Callback):
             def on_train_end(inner_self, logs=None):
                 logs = logs or {}
                 log_data = {
@@ -56,15 +56,15 @@ class Tracker(AbstractContextManager):
                     "final_logs": logs
                 }
 
-                os.makedirs("blackbox_logs", exist_ok=True)
-                self.filename = f"blackbox_logs/metrics_{self.start_time.strftime('%Y%m%d_%H%M%S')}.json"
+                os.makedirs("traceml_logs", exist_ok=True)
+                self.filename = f"traceml_logs/metrics_{self.start_time.strftime('%Y%m%d_%H%M%S')}.json"
                 with open(self.filename, "w") as f:
                     json.dump(log_data, f)
-                print(f"[Traceml] Final logs saved to {self.filename}")
+                print(f"[traceML] Final logs saved to {self.filename}")
 
-        return TracemlCallback()
+        return TraceMLCallback()
 
     def __exit__(self, exc_type, exc_value, traceback):
-        print(f"[Traceml] Finished experiment: {self.experiment_name}")
+        print(f"[traceML] Finished experiment: {self.experiment_name}")
         if exc_type:
-            print(f"[Traceml] Error during experiment: {exc_value}")
+            print(f"[traceML] Error during experiment: {exc_value}")
