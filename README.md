@@ -3,19 +3,16 @@
 A Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to your code workflow, even if you forgot to set it up.
 
 ## Why?
-We've all been there:
-- You train a model in Colab or Jupyter
-- It takes 10+ hours
-- You forget to log the `training_loss` or `validation_loss` in the process
-- Now you want to plot training and validation loss over epochs, 
-- BUT can't because you forgot to log & plot them during training!
 
-**traceML** has got your back!
-Whether you're building CNNs, Transformers, or experimental models, traceML ensures you never lose your training history again.
+Training deep learning models can be time-consuming and resource-intensive. It's all too common to run a lengthy experiment, only to realize afterward that essential training or validation metrics were not logged, making it difficult to analyze or reproduce results.
 
-No setup overhead.
-Just pure productivity.
-Import and forget it.
+**traceML** eliminates this problem by automatically capturing and saving all relevant training metrics—without requiring any changes to your workflow. Whether you're developing CNNs, Transformers, or experimental architectures, traceML ensures your training history is always preserved and accessible.
+
+- No setup overhead
+- No risk of missing critical logs
+- Seamless integration: just import and go
+
+With traceML, you can focus on research and model development, confident that your experiment data is always safe and ready for analysis.
 
 ## Project Structure
 
