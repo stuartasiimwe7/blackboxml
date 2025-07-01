@@ -3,11 +3,6 @@ import matplotlib.pyplot as plt
 import os
 
 def visualise_metrics(filepath, save_path=None, show=True):
-    """
-    Visualise training/validation metrics from a JSON file.
-    If save_path is provided, saves each plot as an image file in that directory.
-    If show is True, displays the plots interactively.
-    """
     with open(filepath, 'r') as f:
         metrics = json.load(f)
 
