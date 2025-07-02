@@ -3,6 +3,10 @@ import json
 import datetime
 from contextlib import AbstractContextManager
 from typing import Any, Callable, Dict, List, Optional, Type, TypeVar
+import logging
+
+logger = logging.getLogger("blackboxml")
+
 
 def autopilot() -> None:
     """
@@ -23,7 +27,7 @@ def autopilot() -> None:
             Returns:
                 The History object returned by the original fit().
             """
-            print("[BlackBoxML] Auto-logging metrics from model.fit()")
+            logger.info("[BlackBoxML] Auto-logging metrics from model.fit()")
 
             history = original_fit(self, *args, **kwargs)
             metrics = history.history
@@ -35,15 +39,15 @@ def autopilot() -> None:
             with open(filename, "w") as f:
                 json.dump(metrics, f)
 
-            print(f"[BlackBoxML] Metrics logged to {filename}")
+            logger.info(f"[BlackBoxML] Metrics logged to {filename}")
             return history
 
         models.Model.fit = patched_fit
-        print("[BlackBoxML] Patched model.fit() to log metrics.")
+        logger.info("[BlackBoxML] Patched model.fit() to log metrics.")
 
     except Exception as e:
-        print(f"[BlackBoxML] Autopilot failed. Error: {e}")
-        print("[BlackBoxML] Auto-logging disabled.")
+        logger.error(f"[BlackBoxML] Autopilot failed. Error: {e}")
+        logger.error("[BlackBoxML] Auto-logging disabled.")
 
 
 class Tracker(AbstractContextManager):
@@ -63,7 +67,7 @@ class Tracker(AbstractContextManager):
         self.filename: str = ""  # Always a string
 
     def __enter__(self) -> "Tracker":
-        print(f"[BlackBoxML] Starting experiment: {self.experiment_name}")
+        logger.info(f"[BlackBoxML] Starting experiment: {self.experiment_name}")
         return self
 
     def get_keras_callback(self) -> Any:
@@ -88,11 +92,11 @@ class Tracker(AbstractContextManager):
                 self.filename = f"blackboxml_logs/metrics_{self.start_time.strftime('%Y%m%d_%H%M%S')}.json"
                 with open(self.filename, "w") as f:
                     json.dump(log_data, f)
-                print(f"[BlackBoxML] Final logs saved to {self.filename}")
+                logger.info(f"[BlackBoxML] Final logs saved to {self.filename}")
 
         return BlackBoxMLCallback()
 
     def __exit__(self, exc_type: Optional[Type[BaseException]], exc_value: Optional[BaseException], traceback: Any) -> None:
-        print(f"[BlackBoxML] Finished experiment: {self.experiment_name}")
+        logger.info(f"[BlackBoxML] Finished experiment: {self.experiment_name}")
         if exc_type:
-            print(f"[BlackBoxML] Error during experiment: {exc_value}")
+            logger.error(f"[BlackBoxML] Error during experiment: {exc_value}")
