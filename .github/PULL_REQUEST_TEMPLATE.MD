@@ -30,4 +30,4 @@ List major changes:
 Paste images, screenshots, logs, etc.
 
 ---
-Remember: Great PRs → Great Projects. Thanks for leveling up **traceml**!
+Remember: Great PRs → Great Projects. Thanks for leveling up **blackboxml**!

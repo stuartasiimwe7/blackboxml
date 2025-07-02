@@ -15,12 +15,11 @@ All notable changes to this project will be documented in this file. This projec
 
 ---
 
-## [0.1.0] - Initial Release
+## [0.1.0] - April 2025 Initial Release
 - First public release of BlackBoxML, providing automatic metric logging for Keras/TensorFlow workflows.
 
 #### Added
 
-- **Log Directory Update:** All training and experiment logs are now saved in the `traceml_logs/` directory instead of the previous `blackbox_logs/`. This change ensures consistency with the new package name and avoids confusion for new users.
 - **Plot Saving Capability:** The `visualise_metrics` function now supports saving plots as image files. Users can specify a directory to save plots, making it easier to archive and share training results.
 - **Comprehensive Documentation:** Updated and expanded documentation, including a new API reference and migration instructions for users upgrading from `blackboxml`.
 - **Changelog:** Introduced this `CHANGELOG.md` to provide transparent and detailed tracking of all changes, improvements, and fixes.

@@ -1,8 +1,8 @@
-# Contributing to traceML
+# Contributing to BlackBoxML
 
-Thank you for your interest in contributing to **traceML**! 
+Thank you for your interest in contributing to **BlackBoxML**! 
 We welcome contributions from everyone — whether it's fixing bugs, improving documentation, or adding new features.  
-Your efforts help push traceML forward. 
+Your efforts help push BlackBoxML forward. 
 
 ---
 
@@ -15,22 +15,22 @@ Your efforts help push traceML forward.
 
   - **HTTPS**:
     ```bash
-    git clone https://github.com/stuartasiimwe7/traceml.git
+    git clone https://github.com/stuartasiimwe7/blackboxml.git
     ```
 
   - **GitHub CLI**:
     ```bash
-    gh repo clone stuartasiimwe7/traceml
+    gh repo clone stuartasiimwe7/blackboxml
     ```
 
   - **SSH**:
     ```bash
-    git clone git@github.com:stuartasiimwe7/traceml.git
+    git clone git@github.com:stuartasiimwe7/blackboxml.git
     ```
 
 - Navigate into the project directory:
   ```bash
-  cd traceml
+  cd blackboxml
   ```
 
 ### 2. Set Up Your Development Environment
@@ -104,9 +104,9 @@ Your efforts help push traceML forward.
 
 ## License
 
-By contributing, you agree your work will be licensed under the same license as **traceML**.
+By contributing, you agree your work will be licensed under the same license as **BlackBoxML**.
 
 ---
 
 Thanks for being awesome,  
-**The traceML Team** 🖤
+**The BlackBoxML Team** 🖤

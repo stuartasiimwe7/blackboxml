@@ -30,7 +30,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Software Version:**
 - Python version: [e.g., 3.11.4]
-- traceml version: [e.g., 0.1.0]
+- blackboxml version: [e.g., 0.1.0]
 
 ## Additional Context
 Any other context about the problem that might be helpful.
