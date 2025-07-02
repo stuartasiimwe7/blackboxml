@@ -24,5 +24,3 @@ All notable changes to this project will be documented in this file. This projec
 - **Comprehensive Documentation:** Updated and expanded documentation, including a new API reference and migration instructions for users upgrading from `blackboxml`.
 - **Changelog:** Introduced this `CHANGELOG.md` to provide transparent and detailed tracking of all changes, improvements, and fixes.
 
-#### Removed
-N/A
