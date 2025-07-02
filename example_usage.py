@@ -44,8 +44,8 @@ with training & validation metrics — automatically.
 
 # After training, visualise the most recent metrics
 import glob
-log_files = sorted(glob.glob("blackbox_logs/metrics_*.json"), reverse=True)
+log_files = sorted(glob.glob("blackboxml_logs/metrics_*.json"), reverse=True)
 if log_files:
-    visualise_metrics(log_files[0])
+    visualise_metrics(log_files[0], save_path="blackboxml_logs")
 else:
     print("No metrics log files found.")
