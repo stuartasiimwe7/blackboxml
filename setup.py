@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='blackboxml',
-    version='0.1.1',
+    version='0.2.0',
     author='Stuart Asiimwe',
     author_email='stuartgabriel@ymail.com',
     description="Automatically logs Keras training metrics.",
