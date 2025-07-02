@@ -16,13 +16,14 @@ You can focus on research and model development, confident that your experiment 
 ## Project Structure
 
 ```
-BlackBoxML/
-├── BlackBoxML/
+blackboxml/
+├── blackboxml/
 │   ├── __init__.py
 │   ├── autopilot.py
 │   ├── visualiser.py
 ├── setup.py
 ├── README.md
+├── CHANGELOG.md
 ├── LICENSE
 ```
 
@@ -67,7 +68,7 @@ BlackBoxML integrates seamlessly into your workflow by patching `model.fit()` to
 ### Basic Usage
 
 ```python
-from BlackBoxML import autopilot
+from blackboxml import autopilot
 import tensorflow as tf
 
 # Patch model.fit() once
@@ -85,7 +86,7 @@ model.fit(...)  # Metrics are logged automatically
 For more advanced tracking, you can specify experiment names and tags:
 
 ```python
-from BlackBoxML import autopilot
+from blackboxml import autopilot
 
 # Use autopilot with experiment details
 with autopilot("mnist_cnn", tags=["keras", "cnn", "mnist"]) as tracker:
@@ -99,10 +100,10 @@ This approach allows you to organize and tag your experiments for better trackin
 After training, you can visualize the logged metrics using the `visualiser` module:
 
 ```python
-from BlackBoxML.visualiser import visualise_metrics
+from blackboxml.visualiser import visualise_metrics
 
 # Visualize after training
-visualise_metrics("BlackBoxML_logs/metrics_20250424_221132.json")
+visualise_metrics("blackboxml_logs/metrics_20250424_221132.json")
 ```
 
 This will generate plots for training and validation metrics, helping you analyze your model's performance effortlessly.
@@ -112,7 +113,7 @@ This will generate plots for training and validation metrics, helping you analyz
 After training your model, **BlackBoxML** will automatically generate a log file containing all the recorded metrics. Here's an example of the output directory structure:
 
 ```
-BlackBoxML_logs/
+blackboxml_logs/
 └── metrics_YYYYMMDD_HHMMSS.json
 ```
 
