@@ -1,6 +1,4 @@
-# BlackBoxML
-
-A Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to your code workflow.
+This is a Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to your code workflow.
 
 ## Why?
 We have all been there - Training deep learning models can be time-consuming and resource-intensive. And it's all too common to run a lengthy experiment, only to realize afterward that essential training or validation metrics were not logged, making it difficult to analyze or reproduce results.
@@ -29,7 +27,7 @@ blackboxml/
 
 ## Installation
 
-To get started with **BlackBoxML**, follow these steps to set up your environment and install the package:
+Follow the steps below to set up your environment and install the package in order to get started:
 
 ### Step 1: Create a Virtual Environment
 
